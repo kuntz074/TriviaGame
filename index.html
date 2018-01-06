@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <title>Hockey Trivia</title>
+</head>
+<body style="background-color:steelblue;">
+  
+  <div class="row">
+  <!-- this button is created to start the game -->
+    <button class='startGame btn-dark m-5'>START HOCKEY TRIVIA</button>
+  <!-- a wrapper div holds all the items that will be displayed after the startGame button is clicked -->
+    <div class="col-md-2"></div>
+
+    <div class="col-md-6">
+      <div class='wrapper'>
+        <h1 class='header display-2' style="font-family: 'Caveat', cursive; text-align: center;">Hockey Trivia </h1>
+        
+        <div class="card bg-light mb-3" style="max-width: 36rem;">
+          <div class="card-header" style="text-align: center;"> 
+            <div class='timer' id='timeLeft'></div> 
+          </div>
+              <div class="card-body">
+                <p class="card-text"><div class='form' id='questions-container'></div></p>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-6">
+  <!-- button to end game if player finishes the game before the time is up -->
+    <button id='doneButton'>SUBMIT ANSWERS!</button>
+  <!-- message to be displayed when time is up -->
+    <div class='message' id='messageDiv'></div>
+  <!-- div to display the results of the game -->
+    <div class='results'></div>
+  </div>
+  <!-- linking to jquery and the local js file -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script type='text/javascript' src='assets/javascript/app.js'></script> 
+</body>
+</html>
